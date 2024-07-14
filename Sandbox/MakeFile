@@ -1,0 +1,28 @@
+CC = g++
+ENGINEDIR = /home/etc/testEngine/Engine/
+CFLAGS = -Wall -g `pkg-config --cflags glew glfw3` -I$(ENGINEDIR)src
+LDFLAGS = `pkg-config --libs glew glfw3` -lGL -lm -L$(ENGINEDIR)lib -lEngine
+
+SRCDIR = src
+SRCS = $(wildcard $(SRCDIR)/*.cpp)
+
+OBJDIR = obj
+OBJS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(SRCS))
+
+OUTDIR = bin
+EXEC = $(OUTDIR)/main
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+	mkdir -p $(OUTDIR)
+	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
+	mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -rf $(OBJDIR) $(OUTDIR)
+
+.PHONY: all clean
