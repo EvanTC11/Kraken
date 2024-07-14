@@ -1,15 +1,25 @@
 #pragma once
 
-class Game
+#include "OrthographicCamera.h"
+
+namespace Kraken
 {
-public:
-    //Game() : m_Running(false) {}
-    Game() {}
-    virtual ~Game() {}
+    class Game
+    {
+    public:
+        //Game() : m_Running(false) {}
+        Game()
+        {}
 
-    virtual void Run() = 0;
-    virtual void Stop() = 0; //{ m_Running = false; };
+        virtual ~Game()
+        {}
 
-protected:
-    //bool m_Running;
-};
+        virtual void Run() = 0;
+
+        virtual void Stop() = 0; //{ m_Running = false; };
+
+    protected:
+        //bool m_Running;
+        OrthographicCamera m_Camera;
+    };
+}

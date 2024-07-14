@@ -5,36 +5,45 @@
 
 #include "Entity.h"
 
-struct WindowInfo
+namespace Kraken
 {
-    const char* Title;
-    uint32_t Width, Height;
-    bool VSync;
-};
+    struct WindowInfo
+    {
+        const char *Title;
+        uint32_t Width, Height;
+        bool VSync;
+    };
 
-class Window
-{
-public:
-    Window(const WindowInfo& info);
-    ~Window();
+    class Window
+    {
+    public:
+        Window(const WindowInfo &info);
 
-    void Destroy();
+        ~Window();
 
-    void RegisterEntity(Entity& entity) { m_Entities.push_back(entity); }
-    void RenderEntities();
-    const std::vector<Entity>& GetEntities() const { return m_Entities; }
-    std::vector<Entity>& GetEntities() { return m_Entities; }
+        void Destroy();
 
-    GLFWwindow* GetGLFWWindow() const { return m_Window; }
+        void RegisterEntity(Entity &entity) { m_Entities.push_back(entity); }
 
-    void BeginFrame() const;
-    void EndFrame() const;
+        void RenderEntities();
 
-    bool IsRunning() const { return !glfwWindowShouldClose(m_Window); };
+        const std::vector<Entity> &GetEntities() const { return m_Entities; }
 
-private:
-    std::vector<Entity> m_Entities;
+        std::vector<Entity> &GetEntities() { return m_Entities; }
 
-    GLFWwindow* m_Window;
-    bool m_Destroyed;
-};
+        GLFWwindow *GetGLFWWindow() const { return m_Window; }
+
+        void BeginFrame() const;
+
+        void EndFrame() const;
+
+        bool IsRunning() const { return !glfwWindowShouldClose(m_Window);
+    };
+
+    private:
+        std::vector<Entity> m_Entities;
+
+        GLFWwindow *m_Window;
+        bool m_Destroyed;
+    };
+}
