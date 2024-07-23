@@ -1,7 +1,5 @@
 #pragma once
 
-#include "OrthographicCamera.h"
-
 namespace Kraken
 {
     class Game
@@ -20,6 +18,5 @@ namespace Kraken
 
     protected:
         //bool m_Running;
-        OrthographicCamera m_Camera;
     };
 }

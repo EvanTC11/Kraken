@@ -1,0 +1,3 @@
+/home/etc/Kraken/Kraken/build/CMakeFiles/Kraken.dir
+/home/etc/Kraken/Kraken/build/CMakeFiles/edit_cache.dir
+/home/etc/Kraken/Kraken/build/CMakeFiles/rebuild_cache.dir

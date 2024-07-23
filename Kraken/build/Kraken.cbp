@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Kraken"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\glfw3\;CMake Files\..\..\..\..\usr\lib\cmake\glm\;CMake Files\..\..\..\..\usr\lib\cmake\assimp-5.4\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/etc/Kraken/Kraken/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kraken">
+				<Option output="/home/etc/Kraken/Kraken/build/libKraken.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/etc/Kraken/Kraken/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 Kraken"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kraken/fast">
+				<Option output="/home/etc/Kraken/Kraken/build/libKraken.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/etc/Kraken/Kraken/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 Kraken/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/etc/Kraken/Kraken/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/etc/Kraken/Kraken/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/etc/Kraken/Kraken/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Entity.cpp">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Entity.h">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Game.h">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/OrthographicCamera.cpp">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/OrthographicCamera.h">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Shader.cpp">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Shader.h">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Window.cpp">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/src/Window.h">
+			<Option target="Kraken"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glfw3/glfw3Targets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glm/glmConfig-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\glm\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/assimp-5.4/assimpConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\assimp-5.4\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/assimp-5.4/assimpConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\assimp-5.4\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/assimp-5.4/assimpTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\assimp-5.4\"/>
+		</Unit>
+		<Unit filename="/home/etc/Kraken/Kraken/../../../../usr/lib/cmake/assimp-5.4/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\assimp-5.4\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

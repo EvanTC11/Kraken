@@ -1,0 +1,10 @@
+{
+    "makefile.makefilePath": "MakeFile",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/etc/testEngine/Sandbox/bin",
+            "binaryPath": "/home/etc/testEngine/Sandbox/bin/main",
+            "binaryArgs": []
+        }
+    ]
+}

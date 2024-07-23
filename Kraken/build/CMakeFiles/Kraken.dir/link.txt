@@ -1,0 +1,2 @@
+/usr/bin/ar qc libKraken.a CMakeFiles/Kraken.dir/src/Entity.cpp.o CMakeFiles/Kraken.dir/src/OrthographicCamera.cpp.o CMakeFiles/Kraken.dir/src/Shader.cpp.o CMakeFiles/Kraken.dir/src/Window.cpp.o
+/usr/bin/ranlib libKraken.a

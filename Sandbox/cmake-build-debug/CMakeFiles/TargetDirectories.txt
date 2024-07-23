@@ -1,0 +1,3 @@
+/home/etc/Kraken/Sandbox/cmake-build-debug/CMakeFiles/Sandbox.dir
+/home/etc/Kraken/Sandbox/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/etc/Kraken/Sandbox/cmake-build-debug/CMakeFiles/rebuild_cache.dir
