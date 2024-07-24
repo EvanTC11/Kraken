@@ -38,22 +38,22 @@ namespace Kraken
         }
     }
 
-    void Window::RenderEntities()
-    {
-        if (m_Entities.empty())
-            return;
-
-        for (auto &entity: m_Entities)
-        {
-            entity.Render();
-        }
-    }
-
-    void Window::BeginFrame() const
-    {
-        glClear(GL_COLOR_BUFFER_BIT);
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-    }
+    // void Window::RenderEntities()
+    // {
+    //     if (m_Entities.empty())
+    //         return;
+    //
+    //     for (auto &entity: m_Entities)
+    //     {
+    //         entity.Render();
+    //     }
+    // }
+    //
+    // void Window::BeginFrame() const
+    // {
+    //     glClear(GL_COLOR_BUFFER_BIT);
+    //     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    // }
 
     void Window::EndFrame() const
     {

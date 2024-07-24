@@ -1,8 +1,10 @@
 #include <Game.h>
 #include <Shader.h>
+#include <Vertex.h>
 #include <Entity.h>
 #include <Window.h>
 #include <OrthographicCamera.h>
+#include <Renderer.h>
 #include <glm/gtc/type_ptr.hpp>
 
 #define WIDTH 800
@@ -11,7 +13,7 @@
 class Test final : public Kraken::Game
 {
 public:
-    Test() : Game(), m_Window({"Best Game Ever", WIDTH, HEIGHT}), m_Camera(0.0f, (float)WIDTH, 0.0f, float(HEIGHT))
+    Test() : m_Window({"Best Game Ever", WIDTH, HEIGHT}), m_Camera(0.0f, (float)WIDTH, 0.0f, float(HEIGHT))
     {
     }
 
@@ -33,7 +35,7 @@ public:
 
         const Kraken::Shader shader("../res/test.Shader");
         Kraken::Entity e(vertices, indices, shader);
-        m_Window.RegisterEntity(e);
+        //m_Window.RegisterEntity(e);
 
         const static GLint location = glGetUniformLocation(shader.GetId(), "u_ViewProjectionMatrix");
         if (location == -1)
@@ -45,9 +47,8 @@ public:
 
         while (m_Window.IsRunning())
         {
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-            glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-
+            Kraken::Renderer::Clear(0);
+            
             shader.Bind();
             e.Bind();
             glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(m_Camera.GetViewProjectionMatrix()));
